@@ -1,0 +1,102 @@
+#controls {
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropzone-container {
+    position: relative;
+    margin-top: 80px;
+    width: 75%;
+    height: 300px;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-history-spinner {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+    padding-right: 10px;
+}
+
+#product {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#toolbar {
+    height: 100px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.mat-table, mat-paginator {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ngx-label {
+    word-break: break-all;
+}
+
+button {
+    background-color: #00CF00;
+}
+
+input {
+    caret-color: black;
+}
+
+mat-paginator {
+    margin-top: 0;
+}
+
+mat-form-field {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    color: black!important;
+}
+
+::ng-deep .mat-form-field-label {
+    color: black!important;
+}
+
+::ng-deep.mat-form-field-ripple {
+   background-color: black !important;;
+}
+ 
+::ng-deep.mat-form-field-underline {
+    background-color: black!important;
+}

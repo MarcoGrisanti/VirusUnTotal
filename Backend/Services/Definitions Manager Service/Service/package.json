@@ -1,0 +1,28 @@
+{
+  "name": "analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot-reload-start": "nodemon",
+    "start": "ts-node src/app.local.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/randomstring": "^1.1.6",
+    "@types/request": "^2.48.5",
+    "amqplib": "^0.5.6",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  }
+}

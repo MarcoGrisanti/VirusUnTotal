@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Risultati dell'Analisi&nbsp;
+    <mat-icon aria-hidden="false" aria-label="Chiudi" (click)="onNoClick()">close</mat-icon>
+</h1>
+<div mat-dialog-content>
+    <mat-list role="list">
+        <mat-list-item *ngFor="let file of data" role="listitem">
+            <span class="file-name" appActiveEllipsis>{{file.filename}}</span>
+            &nbsp;
+            <mat-icon aria-hidden="false" aria-label="">arrow_right_alt</mat-icon>
+            &nbsp;
+            <span [ngClass]="file.result ? 'warning-text' : 'secure-text'">{{file.result ? 'Pericoloso' : 'Sicuro'}}</span>
+        </mat-list-item>
+    </mat-list>
+</div>

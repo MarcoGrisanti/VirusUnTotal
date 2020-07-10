@@ -1,0 +1,35 @@
+{
+  "name": "analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot-reload-start": "nodemon",
+    "start": "ts-node src/app.local.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/express-fileupload": "^1.1.3",
+    "@types/md5": "^2.2.0",
+    "@types/request": "^2.48.5",
+    "amqplib": "^0.5.6",
+    "aws-sdk": "^2.699.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "md5": "^2.2.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  }
+}

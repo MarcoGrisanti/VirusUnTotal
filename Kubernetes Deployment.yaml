@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: virusuntotal-deployment
+spec:
+  selector:
+    matchLabels:
+      app: virusuntotal
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: virusuntotal
+    spec:
+      hostNetwork: true
+      containers:
+        - name: rabbitmq
+          image: rabbitmq:latest
+        - name: db-service
+          image: db-service:Dockerfile
+        - name: analysis-service
+          image: analysis-service:Dockerfile
+        - name: definitions-manager-service
+          image: definitions-manager-service:Dockerfile
+        - name: history-service
+          image: history-service:Dockerfile
+        - name: virusuntotal-frontend
+          image: virusuntotal-frontend:Dockerfile
+
